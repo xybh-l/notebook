@@ -1,4 +1,4 @@
-#SQL语句
+# SQL语句
 
 ### 1.什么是SQL
 + SQL是`Structured Query Language(结构化查询语言)`的缩写。
@@ -50,27 +50,51 @@
 ### DDL
 
 - 创建数据库
-  - CREATE DATABASE 数据库名 CHARACTER SET utf8;
+  - <font size = 2>CREATE DATABASE 数据库名 CHARACTER SET utf8;</font>
 - 修改数据库
-  - ALTER DATABASE 数据库名 CHARACTER SET gbk;
+  - <font size = 2>ALTER DATABASE 数据库名 CHARACTER SET gbk;</font>
 - 创建学生表
   <img src='https://github.com/a1353433900/notebook/blob/master/image/%E5%88%9B%E5%BB%BA%E8%A1%A8.png?raw=true' width = 300px height = 300px>
   <img src='https://github.com/a1353433900/notebook/blob/master/image/%E5%AE%9A%E4%B9%89%E8%A1%A8.png?raw=true ' width = 300px height = 300px>
 - 添加一列
-  - ALTER TABLE 表名 DROP 字段名;
+  - <font size = 2>ALTER TABLE 表名 DROP 字段名;</font>
 - 查看表的字段信息
-  - DESC 表名;
+  - <font size = 2>DESC 表名;</font>
 - 修改一个表的字段类型
-  - ALTER TABLE 表名 MODIFY 字段名 数据类型;   
+  - <font size = 2>ALTER TABLE 表名 MODIFY 字段名 数据类型; </font>  
 - 删除一列
-  - ALTER TABLE 表名 DROP 字段名;
+  - <font size = 2>ALTER TABLE 表名 DROP 字段名;</font>
 - 修改表名
-  - RENAME TABLE 原始表名 TO 要修改的表名;
+  - <font size = 2>RENAME TABLE 原始表名 TO 要修改的表名;</font>
 - 查看表的创建细节
-  - SHOW CREATE TABLE 表名;
+  - <font size = 2>SHOW CREATE TABLE 表名;</font>
 - 修改表的字符集为gbk
-  - ALTER TABLE 表名 CHARACTER SET 字符集名称;
+  - <font size = 2>ALTER TABLE 表名 CHARACTER SET 字符集名称;</font>
 - 修改表的列名
-  - ALTER TABLE 表名 CHANGE 原始列名 新列名 数据类型;
+  - <font size = 2>ALTER TABLE 表名 CHANGE 原始列名 新列名 数据类型;</font>
 - 删除表
-  - DROP TABLE 表名;  
+  - <font size = 2>DROP TABLE 表名;  </font>
+
+### DML
+- 查询表中的所有数据 
+  - <font size = 2>SELECT * FORM 表名;</font>
+- DML是对表中的数据进行增删改查的操作
+- 插入操作
+> - <font size=2 color=blue>INSERT INTO 表名(列名1, 列名2...) VALUES (列值1, 列值2);</font>
+> - <font size=3 color=red>注意事项</font>
+<font size=2 color=blue> 
+>   - 列名与列值的类型,个数,顺序要一一对应。
+>   - 值不要超出列定义的长度。
+>   - 插入的日期好字符一样，都使用引号括起来。
+> - 批量插入 INSERT INTO 表名(列名1, 列名2...) VALUES(列值1, 列值2...),(列值1, 列值2);
+</font>
+- 更新操作
+  - UPDATE 表名 SET 列名1=列值1, 列名2=列值2。。。 WHERE 列名=值
+  - 把所有学生的分数改为90
+  > UPDATE students SET score=90;
+  - 把姓名为zs的学生分数改为60
+  > UPDATE students SET score=60 WHERE NAME='zs'; 
+  - 把姓名为李四的年龄改为20和分数改为70
+  > UPDATE students SET age=20,score=70 WHERE name='ls';
+  - 把wc的年龄在原来基础上加1岁
+  > UPDATE students SET age=age+1 WHERE name='wc;
