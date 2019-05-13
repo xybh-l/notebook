@@ -50,8 +50,27 @@
 ### DDL
 
 - 创建数据库
-  - create database 数据库名 character set utf8;
+  - CREATE DATABASE 数据库名 CHARACTER SET utf8;
 - 修改数据库
-  - alter database 数据库名 character set gbk;
+  - ALTER DATABASE 数据库名 CHARACTER SET gbk;
 - 创建学生表
-  -  
+  <img src='https://github.com/a1353433900/notebook/blob/master/image/%E5%88%9B%E5%BB%BA%E8%A1%A8.png?raw=true' width = 300px height = 300px>
+  <img src='https://github.com/a1353433900/notebook/blob/master/image/%E5%AE%9A%E4%B9%89%E8%A1%A8.png?raw=true ' width = 300px height = 300px>
+- 添加一列
+  - ALTER TABLE 表名 DROP 字段名;
+- 查看表的字段信息
+  - DESC 表名;
+- 修改一个表的字段类型
+  - ALTER TABLE 表名 MODIFY 字段名 数据类型;   
+- 删除一列
+  - ALTER TABLE 表名 DROP 字段名;
+- 修改表名
+  - RENAME TABLE 原始表名 TO 要修改的表名;
+- 查看表的创建细节
+  - SHOW CREATE TABLE 表名;
+- 修改表的字符集为gbk
+  - ALTER TABLE 表名 CHARACTER SET 字符集名称;
+- 修改表的列名
+  - ALTER TABLE 表名 CHANGE 原始列名 新列名 数据类型;
+- 删除表
+  - DROP TABLE 表名;  
