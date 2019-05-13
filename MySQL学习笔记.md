@@ -46,3 +46,12 @@
     >日期时间类型 yyyy-MM-dd hh:mm:ss
 
 + <font size=4 color=red>在mysql中，字符串类型和日期类型都要用单引号括起来。'xybh' '2020-01-01'</font>
+
+### DDL
+
+- 创建数据库
+  - create database 数据库名 character set utf8;
+- 修改数据库
+  - alter database 数据库名 character set gbk;
+- 创建学生表
+  -  
