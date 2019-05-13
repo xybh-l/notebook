@@ -20,13 +20,12 @@
 + MySQL支持所有标准SQL数据数据类型。
 + MySQL支持多种类型，大致可以分为三类
   - 数值类型
-    <img src="image/数值类型.png" width = 600px height = 400px>
-
+    <img src="https://github.com/a1353433900/notebook/blob/master/image/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B.png?raw=true" width = 600px height = 400px>
   - 字符串类型
-    <img src="image/字符串类型.png" width = 600px height = 400px>
+    <img src="https://github.com/a1353433900/notebook/blob/master/image/%E6%95%B0%E5%80%BC%E7%B1%BB%E5%9E%8B.png?raw=true" width = 600px height = 400px>
 
   - 日期和时间类型
-    <img src="image/日期和时间类型.png" width = 600px height = 400px>
+    <img src="https://github.com/a1353433900/notebook/blob/master/image/%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4%E7%B1%BB%E5%9E%8B.png?raw=true" width = 600px height = 400px>
 
 + 常用数据类型
   - double
