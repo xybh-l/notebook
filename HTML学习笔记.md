@@ -29,6 +29,7 @@
             <th>姓名</th>
             <th>性别</th>
             <th>年龄</th>
+            <th>地区</th>
         </tr>
     </thead>
     <tbody>
@@ -37,6 +38,7 @@
             <td>蓝旺</td>
             <td>男</td>
             <td>19</td>
+            <td>江西赣州</td>
         </tr>
     </tbody>
 </table>
