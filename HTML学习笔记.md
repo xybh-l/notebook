@@ -42,5 +42,8 @@
         </tr>
     </tbody>
 </table>
-
-<form action=">
+<form>
+    输入文字：<input type="text" value="随意">
+    输入信息：<input type="text" value="随意">
+</form>
+<form aion=">
