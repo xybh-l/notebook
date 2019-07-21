@@ -55,6 +55,7 @@
 ### <font size= 4>创建学生表</font>
   <img src='https://github.com/a1353433900/notebook/blob/master/image/%E5%88%9B%E5%BB%BA%E8%A1%A8.png?raw=true' width = 300px height = 300px>
   <img src='https://github.com/a1353433900/notebook/blob/master/image/%E5%AE%9A%E4%B9%89%E8%A1%A8.png?raw=true ' width = 300px height = 300px>
+  
 ### <font size= 4>添加一列</font>
   - <font size = 2>ALTER TABLE 表名 DROP 字段名;</font>
 ### <font size= 4>查看表的字段信息</font>
@@ -83,7 +84,7 @@
 > - <font size=3 color=red>注意事项:</font>
 >>列名与列值的类型,个数,顺序要一一对应。<br/>
 >值不要超出列定义的长度。<br/>
->插入的日期好字符一样，都使用引号括起来。<br/>
+>插入的日期和字符一样，都使用引号括起来。<br/>
 >批量插入 INSERT INTO 表名(列名1, 列名2...) VALUES(列值1, 列值2...),(列值1, 列值2);<br/>
 
 
